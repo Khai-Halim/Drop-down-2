@@ -1,0 +1,58 @@
+@import 'variables';
+@import 'generic-classes';
+
+
+//RESET styles
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#nav-main{
+    ul{
+        text-align: center;
+        li{
+            display: inline-block;
+            list-style: none;
+            a{
+                background: $white;
+                display: block;
+                text-decoration: none;
+                padding: 10px 20px 10px 20px;
+                //Sub-menu will appear when hovering over main menu.
+                &:hover ~ .sub-menu{
+                    display: block;
+                    min-width: 100%;
+                }
+                &:hover{
+                    background: red;
+                }
+            }
+            .sub-menu{
+                position: absolute;
+                text-align: left;
+                top: 100%;
+                left: 0;
+                
+                //sub-menu is initially invisible.
+                display: none;
+                //Once the sub-menu appears this will keep it visible as long as the sub-menu is hovered over.
+                li{
+                    display: block;
+                    
+                }
+                &:hover{
+                    display: block;
+                    min-width: 100%;
+                }
+            }
+           
+        }
+        .drop-down{
+            position: relative;
+        }
+    }
+}
+

@@ -1,0 +1,64 @@
+.wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.background-white {
+  background: #f6fcfc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#nav-main ul {
+  text-align: center;
+}
+
+#nav-main ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+#nav-main ul li a {
+  background: #f6fcfc;
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+}
+
+#nav-main ul li a:hover ~ .sub-menu {
+  display: block;
+  min-width: 100%;
+}
+
+#nav-main ul li a:hover {
+  background: red;
+}
+
+#nav-main ul li .sub-menu {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+#nav-main ul li .sub-menu li {
+  display: block;
+}
+
+#nav-main ul li .sub-menu:hover {
+  display: block;
+  min-width: 100%;
+}
+
+#nav-main ul .drop-down {
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */
